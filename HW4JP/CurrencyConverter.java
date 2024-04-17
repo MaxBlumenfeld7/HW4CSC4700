@@ -15,6 +15,6 @@ public class CurrencyConverter {
 		
 	}//convert
 	boolean isValidRate(BigDecimal rate) {
-		return false;
+		return (rate.compareTo(BigDecimal.valueOf(0)) > 0 && rate.compareTo(BigDecimal.valueOf(100000)) < 0);
 	}
 }
