@@ -14,4 +14,7 @@ public class CurrencyConverter {
 	    return convertedAmount.setScale(DECIMAL_DIGITS, RoundingMode.HALF_UP);
 		
 	}//convert
+	boolean isValidRate(BigDecimal rate) {
+		return false;
+	}
 }
