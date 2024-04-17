@@ -13,7 +13,6 @@ class CurrencyConverterTest {
 	@Test
 	void testConvert() {
 		CurrencyConverter converter = new CurrencyConverter();
-		fail("Not yet implemented");
 		BigDecimal originalAmount = BigDecimal.valueOf(100.00);
 	    BigDecimal conversionRate = BigDecimal.valueOf(2.70);
 	    BigDecimal expectedResult = BigDecimal.valueOf(270.00).setScale(CurrencyConverter.DECIMAL_DIGITS);

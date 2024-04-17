@@ -10,7 +10,8 @@ public class CurrencyConverter {
 	}//construct
 	
 	public BigDecimal convert(BigDecimal originalAmount, BigDecimal conversionRate) {
-		return BigDecimal.valueOf(0);
+		BigDecimal convertedAmount = originalAmount.multiply(conversionRate);
+	    return convertedAmount.setScale(DECIMAL_DIGITS, RoundingMode.HALF_UP);
 		
 	}//convert
 }
