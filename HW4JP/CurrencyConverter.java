@@ -1,7 +1,16 @@
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class CurrencyConverter {
 
-public static void main(String[] args) {
-	System.out.println("wassup");
-}
+    protected static final int DECIMAL_DIGITS = 2;
+
+	public CurrencyConverter() {
+		
+	}//construct
+	
+	public BigDecimal convert(BigDecimal originalAmount, BigDecimal conversionRate) {
+		return BigDecimal.valueOf(0);
+		
+	}//convert
 }
