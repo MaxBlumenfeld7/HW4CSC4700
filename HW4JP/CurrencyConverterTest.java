@@ -22,6 +22,13 @@ class CurrencyConverterTest {
 	
 	@Test
 	void testIsValid() {
+		boolean expectedResult = false;
+		boolean actualResult = converter.isValidRate(BigDecimal.valueOf(1000000.0));
+	    assertEquals(expectedResult, actualResult);
+
+	}
+	@Test
+	void testIsVali1() {
 		boolean expectedResult = true;
 		boolean actualResult = converter.isValidRate(BigDecimal.valueOf(10.0));
 	    assertEquals(expectedResult, actualResult);
